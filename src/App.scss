@@ -1,0 +1,13 @@
+//font imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+//antd styles
+@import 'antd/dist/antd.css'; 
+
+//component styles
+@import './styles/components/parking-lot';
+
+.App {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,96 @@
+.parking-lot {
+  width: 100%;
+  overflow: hidden;
+
+  &__controls {
+    .car-form {
+      display: flex;
+      gap: 3rem;
+      margin: auto;
+      width: fit-content;
+      margin-top: 2rem;
+    }
+  }
+
+  &__entrance {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+
+    .wall,
+    span {
+      margin-top: 3rem;
+    }
+
+    .wall {
+      height: 2rem;
+      background: black;
+      width: 20%;
+    }
+
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  &__spaces {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    margin: 3rem auto;
+
+    .parking-space {
+      width: 10%;
+      height: 12rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .car-park {
+        border: 1rem solid black;
+        border-top: none;
+        height: 100%;
+
+        &.small {
+          width: 60%;
+        }
+
+        &.mid {
+          width: 80%;
+        }
+
+        &.large {
+          width: 100%;
+        }
+
+        .car-icon {
+          display: none;
+          width: 100%;
+          height: 100%;
+
+          &.filled {
+            display: block;
+          }
+        }
+      }
+
+      &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      &__timer {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
